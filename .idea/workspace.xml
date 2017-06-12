@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ccb9cf-e69a-4c56-860b-42093dcf2303" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/estore/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/estore/templates/estore/product_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/estore/templates/estore/product_new.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/estore/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mystore/__init__.py" afterPath="$PROJECT_DIR$/mystore/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mystore/settings.py" afterPath="$PROJECT_DIR$/mystore/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mystore/urls.py" afterPath="$PROJECT_DIR$/mystore/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
