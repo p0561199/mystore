@@ -9,8 +9,14 @@ from .models import Product
 # Create your views here.
 
 
-class ProductList(generic.ListView):
+class ProductList(PermissionRequiredMixin, generic.ListView):
     model = Product
+
+    def has_permission(self):
+        if self.permission_required:
+            return super(ProductList, self).has_permission()
+        else:
+            return True
 
 
 class ProductDetail(generic.DetailView):
