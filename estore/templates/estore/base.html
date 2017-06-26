@@ -1,38 +1,27 @@
 {% load bootstrap3 %}
+{% load fontawesome %}
+{% load static %}
 {% bootstrap_css %}
 {% bootstrap_javascript jquery=1 %}
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>EStore - 線上電器購物第一選擇</title>
-    </head>
-    <body>
-        <div id="navbar-main">
-            <div class="navbar navbar-inverse navbar-fixed-up">
-                 <div class="container">
-                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                           <span class="icon-bar bar1"></span>
-                           <span class="icon-bar bar2"></span>
-                           <span class="icon-bar bar3"></span>
-                        </button>
-                <!--<img class="img-responsive" src="images/jslab.png" width="80" height="60">-->
-                     </div>
-                     <div class="navbar-collapse collapse">
-                         <div class="nav navbar-nav">
-                             <li> <a href="/"><font style="font-family: Consolas" size="+3" color="white">EStore-線上電器購物第一選擇</font></a></li>
-                            <li> <a  href="new" class="smoothSrcoll" style="font-family: 微軟正黑體;color: #3f5fbf" ><font size="+1">新增商品</font></a></li>
-                            <li> <a  href="login" class="smoothSrcoll" style="font-family: 微軟正黑體;color:  #3f5fbf"><font size="+1">會員登入</font></a></li>
-                            <li> <a  href="logout" class="smoothSrcoll" style="font-family: 微軟正黑體;color:  #3f5fbf"><font size="+1">會員登出</font></a></li>
-                         </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
+<head>
+    <title>EStore - 線上電器購物第一選擇</title>
+    {% fontawesome_stylesheet %}
+    <link rel="stylesheet" type="text/css" href="{% static 'estore/css/application.css' %}">
+</head>
+<body>
+{% block navbar %}
+    {% include "estore/_navbar.html" %}
+{% endblock %}
+<div class="page-header">
+    <h1><a href="/">EStore - 線上電器購物第一選擇</a></h1>
 
-        <div class="content container">
-            {% bootstrap_messages %}
-            {% block content %}
-            {% endblock %}
-        </div>
-    </body>
+</div>
+<div class="content container">
+    {% bootstrap_messages %}
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
 </html>
